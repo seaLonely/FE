@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            width: 700px;
+            height: 700px;
+            background-color: green;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: left;
+            margin: 5px 0;
+        }
+        .text{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            clear: both;
+        }
+
+    </style>
+</head>
+<!-- 浮动会导致父元素高度塌陷 -->
+ <!-- clear overflow -->
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="text"></div>
+    </div>
+    <div class="other">
+
+    </div>
+</body>
+</html>

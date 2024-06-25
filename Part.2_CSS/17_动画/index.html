@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes testAni{
+            0%{
+                /* 透明度 */
+                opacity: 0.2;
+                width: 300px;
+                 background-color: red;
+            }
+
+            50%{
+                width: 100px;
+                background-color: yellow;
+            }
+
+            100%{
+                opacity: 0.2;
+                width: 300px;
+                background-color:red;
+            }
+        }
+
+        div{
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* name：动画名称 */
+            /* duration：动画的持续时间 */
+            /* timing-function：动画效果的速率 ease逐渐变慢 linear匀速 ease-in加速 ease-out减速 ease-in-out先加速后减速 */
+            /* delay：延时执行 */
+            /* iteration-count：动画循环次数 */
+            /* direction：动画播放的方向 默认向前，*/
+            /* animation-play-state：控制动画的播放状态：pause running */
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            animation: testAni 3s linear 0s infinite;
+
+        }
+
+        /* 鼠标滑到此处的时候会触发 */
+        div:hover{
+            background-color: black;
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

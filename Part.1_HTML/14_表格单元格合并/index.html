@@ -1,0 +1,53 @@
+<!-- 2024.6.20 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 水平合并 colspan 保留左，删右-->
+    <!-- 垂直合并 rowspan 保留上，删下-->
+    <p>合并单元格6 7</p>
+    <p>合并单元格25 20</p>
+    <table width="500px" height="200px" border="1px">
+        <tr>
+            <td>elem1</td>
+            <td>elem2</td>
+            <td>elem3</td>
+            <td>elem4</td>
+            <td>elem5</td>
+        </tr>
+        <tr>
+            <td colspan="2">elem6</td>
+
+            <td>elem8</td>
+            <td>elem9</td>
+            <td>elem10</td>
+        </tr>
+        <tr>
+            <td>elem11</td>
+            <td>elem12</td>
+            <td rowspan="3">elem13</td>
+            <td>elem14</td>
+            <td >elem15</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">elem16</td>
+
+            <td>elem19</td>
+            <td rowspan="2">elem20</td>
+        </tr>
+        <tr>
+
+            <td>elem24</td>
+        </tr>
+    </table>
+</body>
+
+</html>

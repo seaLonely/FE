@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // trim 去掉空格 不改变原来的字符串 还可以去掉制表符、换行、回车
+        // 只能去掉前后的，中间的不行
+        // es6 trimend trimstart
+        var name = '  shcccc  ';
+        var resulet = name.trim();
+
+        console.log(name);
+        console.log(resulet);
+
+
+        var test = '\nshcccc\t\r\n';
+        console.log(test);
+        console.log(test.trim());
+    </script>
+</body>
+</html>

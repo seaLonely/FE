@@ -1,0 +1,257 @@
+.main {
+
+    width: 1920rpx;
+    /* background-color: #28B2EC; */
+    background-color: white ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: #2C6B7A;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .webName {
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.nav {
+    height: 100px;
+    width: 85%;
+    margin: 8px 0px;
+    background-color: #97C1CE;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+
+    .navL {
+        height: 100%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        justify-self: left;
+        align-items: center;
+
+        .navItem {
+            color: white;
+            font-weight: bold;
+            margin: 0 25px;
+            font-size: large;
+        }
+    }
+
+    .navR {
+        height: 100%;
+        flex-grow: 3;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        .self {
+            color: white;
+            font-weight: bold;
+            margin: 0 80px 0 0;
+            font-size: large;
+            font-family: "SimSuncss";
+        }
+    }
+
+}
+
+.article {
+    height: fit-content;
+    width: 85%;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .section {
+        height: 100%;
+        margin: 2px 0px;
+        border-radius: 10px;
+    }
+
+    .section_1 {
+        background-color: #25A5F7;
+        margin: 0 4px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+
+        .dateDisplay {
+            width: fit-content;
+            flex-grow: 1;
+            margin: 20px 8px 4px 8px;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-items: center;
+            /* background-color: aqua; */
+
+            .dateYear {
+                font-size: 30px;
+                font-weight: bolder;
+            }
+
+            .dateMonth {
+                font-size: 50px;
+                font-weight: bolder;
+                color: white;
+            }
+
+            .dateDay {
+                font-size: 30px;
+                font-weight: bolder;
+            }
+        }
+
+        .food {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* background-color: red; */
+        }
+
+        .foodRecord {
+            width: fit-content;
+            margin: 4px 8px 8px 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 20px;
+
+            .foodColumnS {
+                font-size: 20px;
+                font-weight: bolder;
+                color: white;
+            }
+
+            .foodName{
+                font-size: large;
+                font-weight: bolder;
+                color: white    ;
+            }
+
+            .foodpic {
+                width: 300px;
+                height: 150px;
+                border-radius: 10px;
+            }
+
+            .foodIntroduction{
+                width: 300px;
+            }
+        }
+    }
+
+    .section_2 {   
+        flex-grow: 1;
+        background-color: #0C6DD4;
+        margin: 0 0 0 4px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span{
+            color: white;
+            font-size: 20px;
+        }
+        .javaRecord{
+            width: 90%;
+            flex-grow: 1;
+            margin: 0px 8px;
+            .code{
+                width: 90%;
+                /* background-color: red; */
+                display:flex;
+                flex-direction: row;
+                margin: 8px 8px;
+                .codeName{
+                    flex-grow: 1;
+                }
+                .learningRoad{
+                    flex-grow: 5;
+                    /* background-color: rebeccapurple; */
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+        .pythonRecord{
+            width: 90%;
+            flex-grow: 1;
+            margin: 0px 8px;
+            .code{
+                width: 90%;
+                /* background-color: red; */
+                display:flex;
+                flex-direction: row;
+                margin: 8px 8px;
+                .codeName{
+                    flex-grow: 1;
+                }
+                .learningRoad{
+                    flex-grow: 5;
+                    /* background-color: rebeccapurple; */
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+        .htmlRecord{
+            width: 90%;
+            flex-grow: 1;
+            margin: 0px 8px;
+            .code{
+                width: 90%;
+                /* background-color: red; */
+                display:flex;
+                flex-direction: row;
+                margin: 8px 8px;
+                .codeName{
+                    flex-grow: 1;
+                }
+                .learningRoad{
+                    flex-grow: 5;
+                    /* background-color: rebeccapurple; */
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+    }
+
+}
+
+.footer {
+    height: fit-content;
+    width: 100%;
+    background-color: #3F78AF;
+    margin: 8px 0px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .introduction{
+        margin: 18px 0px;
+        color: white;
+        text-align: center;
+    }
+}

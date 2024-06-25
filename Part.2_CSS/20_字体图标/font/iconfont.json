@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "40000545",
+      "name": "销售订单管理",
+      "font_class": "xiaoshoudingdanguanli",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}
