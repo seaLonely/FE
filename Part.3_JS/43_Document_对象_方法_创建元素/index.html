@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">导航</div>
+
+    <script>
+
+        var text = document.createElement("p");
+        var content = document.createTextNode("创建的文本");
+        // appendChild 将内容或者子元素放到容器中
+        text.appendChild(content);
+        console.log(text);
+        var attribute = document.createAttribute('id');
+        attribute.value = "tttt";
+        console.log(attribute);
+
+        // 给div增加一个id
+        text.setAttributeNode(attribute);
+        console.log(text);
+
+    </script>
+</body>
+</html>

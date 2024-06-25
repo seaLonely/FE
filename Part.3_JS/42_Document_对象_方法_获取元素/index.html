@@ -8,14 +8,33 @@
 <body>
     <div>123456</div>
     <p class="pTest">qadsfasd</p>
+    <p name="pName">34123421</p>
+    <div id="divIDD">hhhhh</div>
+
+    <div class="nav">nav1</div>
+    <div class="nav">nav2</div>
     <script>
         var divs = document.getElementsByTagName("div")[0];
         divs.innerHTML = "hello world";
+        var divsClass = document.getElementsByClassName("pTest")[0];
 
-        var ps = document.getElementsByClassName("pTest")[0];
+        // 不常用
+        var ps = document.getElementsByClassName("pName")[0];
+
+        // 最常用
+        var divIDD = document.getElementById("divDD");
+
+        // document.querySelector(),接收一个css选择器作为参数，返回匹配该选择器的元素节点，如果有多个，则返回第一个
+        var navDiv = document.querySelector(".nav");
+        console.log(navDiv);
+
+        var navDivAll = document.querySelectorAll(".nav");
+        console.log(navDivAll);
 
         console.log(divs);
         console.log(ps);
+        console.log("---");
+        console.log(divIDD);
     </script>
 </body>
 </html>

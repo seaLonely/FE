@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var divJs = document.createElement("div");
+        var divContent = document.createTextNode("div里面的内容文字");
+        divJs.appendChild(divContent);
+        console.log(divJs);
+        // 如果我们要给这个div增加一个class/name/id
+        var divClass = document.createAttribute("class");
+        divClass.value = "divTest";
+        divJs.setAttributeNode(divClass);
+
+    </script>
+</body>
+</html>
