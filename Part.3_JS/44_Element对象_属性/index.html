@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="divTest" id="root">abc</div>
+    <script>
+        // 这一步其实是在获取这个元素节点，比如这边就是通过id来获取的
+        var divIdGet = document.getElementById("root");
+        // Element.id 来进行操作
+        divIdGet.id = "newRoot";
+        console.log(divIdGet.id);
+        // Element.className 操作的是class
+        divIdGet.className = "divTest1 divTest2";
+        console.log(divIdGet.className);
+        // 增加class
+        divIdGet.classList.add("addTest");
+        console.log(divIdGet.className);
+        // 移除class
+        divIdGet.classList.remove("divTest1");
+        console.log(divIdGet.className);
+        // 检查是否包含某个class
+        if(divIdGet.classList.contains("divTest2")){
+            console.log("包含");
+        }
+        else{
+            console.log("不包含");
+        }
+        // toggle 如果不存在就加入，存在的话就移除
+
+        // innerHTML可以设置内容也可以不设置内容 
+        console.log(divIdGet.innerHTML);
+        console.log(divIdGet.innerHTML="hELLO");    // 读取
+        // innerText
+        // 两者区别
+        // innerHTML可以识别标签
+        // innerText会把标签识别成一个字符串
+        
+    </script>
+</body>
+</html>
