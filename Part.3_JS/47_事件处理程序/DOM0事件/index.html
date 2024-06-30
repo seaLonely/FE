@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = "btn">按钮点击</button>
+
+        // 优点，html和js是分离的
+        // 缺点，无法同时添加多个事件
+
+    <script>
+
+        var btn = document.getElementById("btn");
+        btn.onclick = function clickEvent() {
+            console.log("had clicked");
+        }
+
+    </script>
+</body>
+</html>
