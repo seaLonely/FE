@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            width: 200px;
+            height: 100px;
+            background: red;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="btn1">单击事件</button>
+    <br>
+    <button id="btn2">双击事件</button>
+    <br>
+    <button id="btn3">鼠标按下</button>
+    <br>
+    <button id="btn4">鼠标抬起</button>
+    <br>
+    <div class="box" id="btn5">鼠标移动到内部移动时会持续触发</div>
+    <br>
+    <div class="box1" id="btn6"></div>
+    <br>
+    <div class="box2" id="btn7"></div>
+    <script>
+
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+        var btn5 = document.getElementById("btn5");
+
+        btn1.onclick = function btnClick() {
+            alert("触发单击事件");
+        }
+
+        btn2.ondblclick = function btnDbClick() {
+            alert("触发双击事件");
+        }
+
+        btn3.onmousedown = function btndown(params) {
+            console.log("Mouse down");
+        }
+
+        btn4.onmouseup = function btnup(params) {
+            console.log("Mouse up");
+        }
+
+        btn5.onmousemove = function btnmove(params) {
+            console.log("Mouse move in box");
+        }
+
+    </script>
+</body>
+</html>

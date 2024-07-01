@@ -1,0 +1,11 @@
+## 鼠标事件
+- click 单击  
+- dbclick 双击  
+- mousedown 按下鼠标触发  
+- mouseup 释放按下的鼠标键触发  
+- mousemove 当鼠标在节点内部移动时触发，当鼠标持续移动时，连续触发  
+- mouseenter 进入一个节点时触发，进入子节点不会触发  
+- mouseleave 离开一个节点时触发，离开父节点不会触发  
+- mouseover 进入一个节点时触发，进入子节点会再一次触发  
+- mouseout 离开一个节点时触发，离开父节点也会触发  
+- wheel 滚动鼠标的滚轮时触发
