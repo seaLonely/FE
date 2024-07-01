@@ -11,23 +11,58 @@
             height: 100px;
             background: red;
         }
+        .box1{
+            width: 200px;
+            height: 100px;
+            background: green;
+        }
+        .box2{
+            width: 200px;
+            height: 100px;
+            background: yellow;
+        }
+        .box3{
+            width: 200px;
+            height: 100px;
+            background: blue;
+        }
+        .box4{
+            width: 200px;
+            height: 100px;
+            background: purple;
+        }
+        .box5{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
 
     </style>
 </head>
 <body>
-    <button id="btn1">单击事件</button>
+    <button id="btn1">单击事件click</button>
     <br>
-    <button id="btn2">双击事件</button>
+    <button id="btn2">双击事件dbclick</button>
     <br>
-    <button id="btn3">鼠标按下</button>
+    <button id="btn3">鼠标按下down</button>
     <br>
-    <button id="btn4">鼠标抬起</button>
+    <button id="btn4">鼠标抬起up</button>
     <br>
-    <div class="box" id="btn5">鼠标移动到内部移动时会持续触发</div>
+    <div class="box" id="btn5">鼠标移动到内部移动时会持续触发move</div>
     <br>
-    <div class="box1" id="btn6"></div>
+    <div class="box1" id="btn6">鼠标进入触发enter</div>
     <br>
-    <div class="box2" id="btn7"></div>
+    <div class="box2" id="btn7">鼠标退出触发leave</div>
+    <br>
+    <hr>
+    <!-- 两者有区别 -->
+    <div class="box3" id="btn8">鼠标进入触发over</div>
+    <br>
+    <div class="box4" id="btn9">鼠标退出触发out</div>
+    <br>
+    <hr>
+    <div class="box5" id="btn10">鼠标滚轮wheel</div>
+
     <script>
 
         var btn1 = document.getElementById("btn1");
@@ -35,6 +70,13 @@
         var btn3 = document.getElementById("btn3");
         var btn4 = document.getElementById("btn4");
         var btn5 = document.getElementById("btn5");
+        var btn6 = document.getElementById("btn6");
+        var btn7 = document.getElementById("btn7");
+        var btn8 = document.getElementById("btn8");
+        var btn9 = document.getElementById("btn9");
+        var btn10 = document.getElementById("btn10");
+
+        
 
         btn1.onclick = function btnClick() {
             alert("触发单击事件");
@@ -54,6 +96,27 @@
 
         btn5.onmousemove = function btnmove(params) {
             console.log("Mouse move in box");
+        }
+
+        btn6.onmouseenter = function btnenter(params) {
+            console.log("Mouse enter");
+        }
+
+        btn7.onmouseleave = function btnleave(params) {
+            console.log("Mouse leave");
+        }
+
+
+        btn8.onmouseover = function btnover(params) {
+            console.log("Mouse over");
+        }
+
+        btn9.onmouseout = function name(params) {
+            console.log("Mouse out");
+        }
+
+        btn10.onwheel = function name(params) {
+            console.log("wheel start");
         }
 
     </script>

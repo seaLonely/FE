@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .root1{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .root2{
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1" id="box1">
+        <div class="root1" id="root1">
+
+        </div>
+    </div>
+
+    <div class="box2" id="box2">
+        <div class="root2" id="root2">
+
+        </div>
+    </div>
+
+
+    <script>
+
+        var root1 = document.getElementById("box1");
+        var root2 = document.getElementById("box2");
+
+        root1.onmouseenter = function name(params) {
+            console.log("mouse enter");
+        }
+
+        root1.onmouseleave = function name(params) {
+            console.log("mouse leave");
+        }
+
+
+
+        root2.onmouseover = function name(params) {
+            console.log("mouse over");
+        }
+
+        root2.onmouseout = function name(params) {
+            console.log("mouse out");
+        }
+
+    </script>
+</body>
+</html>
