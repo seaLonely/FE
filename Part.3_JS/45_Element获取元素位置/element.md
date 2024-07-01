@@ -1,0 +1,21 @@
+# element 获取元素位置
+* clientHeight 
+> 获取元素的高度，包括padding部分，不包括margin，border
+* clientWidth
+> 获取元素的宽度，包括padding，不包括margin，border
+* scrollHeight
+> 元素总高度，包括padding，不包括margin，border，但是也包括溢出的不可见内容
+* scrollWidth
+> 元素总宽度，包括padding，不包括margin，border，但是也包括溢出的不可见内容
+* scrollLeft
+> 元素的水平滚动条，向右滚动的像素数量
+* scrollTop
+> 元素的垂直滚动条，向下滚动的像素数量
+* offsetHeight
+> 元素的CSS垂直高度（单位像素），包括元素本身的高度，padding和border
+* offsetWidth
+> 元素的CSS水平宽度（单位像素），包括元素本身的高度，padding和border
+* offsetLeft
+> 到定位父级左边界的间距
+* offsetTop
+> 到定位父级上边界的间距
