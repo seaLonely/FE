@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .boxS{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+
 </head>
 <body>
-    
+    <button id="btn">按钮</button>
+    <a href="https://www.bilibili.com" id="b">哔哩哔哩</a>
+    <div class="box" id="box">
+        <p>大盒子</p>
+        <div class="boxS" id="boxS">
+            小盒子
+        </div>
+    </div>
+
+
+    <script>
+        var btn = document.getElementById("btn");
+        var bilbili = document.getElementById("b");
+        var box = document.getElementById("box");
+        var box1 = document.getElementById("boxS");
+
+        
+        btn.onclick = function name(event) {
+            console.log(event.target);
+            event.target.innerHTML = "点击";
+            console.log(event.type);
+        }
+
+        bilbili.onclick = function name(params) {
+            console.log(params.target);
+            console.log(params.type);
+            // params.preventDefault();
+            console.log("bililililil");
+        }
+
+        box.onclick = function name(params) {
+            console.log("click box");
+        }
+
+        boxS.onclick = function name(params) {
+            params.stopPropagation();
+            console.log("clikc boxS");
+        }
+        // 在默认的情况下，点击小盒子，大盒子也是会触发的
+        // 为了保证仅触发小盒子，不触发大盒子，这是事件穿透的情况，可以使用stopPropagation方法
+    </script>
 </body>
 </html>

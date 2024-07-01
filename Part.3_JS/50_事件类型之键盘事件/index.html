@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    1221312312123132
+    <input type="text" id="inputTest">
+
+    <script>
+        var username = document.getElementById("inputTest");
+        username.onkeydown = function name(params) {
+            console.log("按下键盘keydown");
+        }
+        username.onkeypress = function name(params) {
+            console.log("按下键盘keypress");
+        }
+        username.onkeyup = function name(params) {
+            console.log("抬起键盘keyup");
+            console.log(params.target.value);
+            console.log(params.keyCode);
+        }
+
+
+    </script>
 </body>
 </html>

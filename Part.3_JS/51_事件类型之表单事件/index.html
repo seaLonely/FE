@@ -6,6 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="text" id="username">
+    <hr>
+    <form id="myForm" onsubmit="submisonHandle">
+        <input type="text" id="nameuse" name="username1">
+        <input type="password" id="psd">
+        <button id="resetBtn">重置</button>
+        <button id="submitBtn">提交</button>
+
+    </form>
+
+    <script>
+        username = document.getElementById("username");
+        nameuse = document.getElementById("nameuse");
+        psd = document.getElementById("psd");
+        submitBtn = document.getElementById("submitBtn");
+        resetBtn = document.getElementById("resetBtn");
+        
+        username.oninput = function name(params) {
+            console.log(params.target.value);
+        }
+        username.onselect = function name(params) {
+            console.log("selected all");
+        }
+        username.onchange = function name(params) {
+            console.log(params.target.value);
+            console.log("change done");
+        }
+
+        // reset 重置
+        // submit 提交
+        // 作用在form表单上
+        // resetBtn.onclick = function name(params) {
+        //     myform.reset();
+        // }
+
+        submitBtn.onclick = function name(params) {
+            myform.submit();
+        }
+        // function submisonHandle(params) {
+        //     console.log("1111");
+        // }
+    </script>
+
 </body>
+
 </html>
