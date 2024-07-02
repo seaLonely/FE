@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+    <h3>333</h3>
+
+    <script>
+
+        function debounce(fn,delay) {
+            var timer = null;
+            return function name(params) {
+                if (timer){
+                    clearTimeout(timer);
+                }
+                timer = setTimeout(fn,delay);
+            }
+        }
+        
+        function scrollHandle() {
+            var scrollTop = document.documentElement.scrollTop;
+            console.log(scrollTop);
+            console.log("had scrolled");
+        }
+
+        window.onscroll = debounce(scrollHandle, 300);
+    </script>
+</body>
+</html>

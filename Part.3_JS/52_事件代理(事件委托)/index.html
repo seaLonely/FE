@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 点击所有li标签生效 -->
+    <ul id="list">
+        <li>1111</li>
+        <li>2222</li>
+        <li>3333</li>
+        <p>ppppp</p>
+    </ul>
+
+    <script>
+        // 由父节点去监听子节点，事件的代理
+        var ul = document.getElementById("list");
+        ul.addEventListener('click', function name(params) {
+            console.log("click ul");
+            if(event.target.tagName == "LI"){
+                if(event.target.innerHTML == "1111"){
+                    console.log("hhhh");
+                }
+            }
+
+        })
+    </script>
+</body>
+</html>
